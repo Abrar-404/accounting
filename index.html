@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Daily Track</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <!-- main div -->
+  <div class="mx-auto justify-center items-center mt-10 text-center">
+
+    <!-- income div -->
+    <div>
+      <!-- income badge -->
+      <div class="badge text-base font-normal py-3 badge-secondary">Income</div>
+      <!-- text input badge -->
+      <div class="mt-5 gap-6">
+        <div class="badge badge-secondary px-5 py-5 badge-outline">Income</div>
+        <input id="income" type="text" placeholder="Enter Amount"
+          class="input input-bordered input-secondary w-full max-w-xs" />
+      </div>
+    </div>
+
+    <!-- Expenses div -->
+    <div class="mt-10">
+      <!-- Expenses badge -->
+      <div class="badge text-base font-normal py-3 badge-secondary">Expenses</div>
+      <!-- text input badge -->
+
+      <!-- food -->
+      <div class="mt-5 gap-6">
+        <div class="badge badge-secondary px-5 py-5 badge-outline">Food</div>
+        <input id="food-box" type="text" placeholder="Enter Amount"
+          class="input input-bordered input-secondary w-full max-w-xs" />
+      </div>
+
+      <!-- Rent -->
+      <div class="mt-5 gap-6">
+        <div class="badge badge-secondary px-5 py-5 badge-outline">Rent</div>
+        <input id="rent-box" type="text" placeholder="Enter Amount"
+          class="input input-bordered input-secondary w-full max-w-xs" />
+      </div>
+
+      <!-- clothes -->
+      <div class="mt-5 gap-6">
+        <div class="badge badge-secondary px-5 py-5 badge-outline">Clothes</div>
+        <input id="clothes-box" type="text" placeholder="Enter Amount"
+          class="input input-bordered input-secondary w-full max-w-xs" />
+      </div>
+    </div>
+
+    <!-- button div -->
+    <div class="mt-6">
+      <button id="btn-calculate" class="btn btn-outline btn-success px-10 py-4">Calculate</button>
+    </div>
+
+    <!-- total expenses -->
+    <div class="mt-6 flex mx-auto items-center justify-center text-center gap-5">
+      <div class="badge justify-start badge-accent badge-outline">Total Expenses</div>
+      <p class="text-2xl"><span id="expenses-area">000 </span></p>
+    </div>
+
+    <!-- Balance -->
+    <div class="mt-6 flex mx-auto items-center justify-center text-center gap-5">
+      <div class="badge px-5 justify-start badge-accent badge-outline">Balance</div>
+      <p class="text-2xl"><span id="balance-area">000 </span></p>
+    </div>
+
+    <!-- save amount field -->
+    <div class="flex mt-6 items-center text-center mx-auto justify-center gap-4">
+      <div>
+        <button class="btn btn-active btn-accent">Save Amount</button>
+      </div>
+      <input id="discount-amount" type="text" placeholder="Amount"
+        class="input input-bordered input-primary w-32 max-w-xs" />
+
+      <div class="flex gap-4 items-center">
+        <p class="font-bold text-white">%</p>
+        <button id="btn-save" class="btn btn-outline btn-accent">Save</button>
+      </div>
+    </div>
+
+    <!-- saving amount -->
+    <div class="mt-6 flex mx-auto items-center justify-center text-center gap-5">
+      <div class="badge justify-start badge-accent badge-outline">Saving Amount</div>
+      <p class="text-2xl"><span id="saving-amount">000 </span></p>
+    </div>
+
+    <!-- Remaining Balance -->
+    <div class="mt-6 flex mx-auto items-center justify-center text-center gap-5">
+      <div class="badge justify-start badge-accent badge-outline">Remaining Balance</div>
+      <p class="text-2xl"><span id="remaining-balance">000 </span></p>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
